@@ -1,0 +1,161 @@
+@import url(./responsividade.css);
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --cor-preta: #000;
+    --cor-branca: #fff;
+    --cor-fundo: #fffaf1 ;
+    --cor-neutra: #c29254;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: "SUSE", sans-serif;
+}
+
+/* cabeçalho*/
+
+header {
+    background-color: var(--cor-preta);
+    height: 70px;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.container {
+    width: 1280px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 180px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: var(--cor-neutra);
+    text-transform: uppercase;
+
+}
+
+.bg-banner {
+    height: calc(100vh - 70px);
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+}
+
+/* sessão sobre mim */
+.texto-sobre{
+    width: 600px;
+}
+.texto-sobre h2{
+font-size: 48px;
+}
+.texto-sobre p{
+    font-size: 20px;
+
+    & span{
+        color: var(--cor-neutra);
+    }
+}
+
+.img-sobre img{
+    width: 600px;
+    margin: 40px 0px;
+}
+
+/* sessão atuações */
+
+#atuacao{
+    background-color: var(--cor-preta);
+    color: var(--cor-neutra);
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    width: 305px;
+    height: 330px;
+    border-left: 1px solid var(--cor-neutra);
+    padding: 40px;
+}
+.card i{
+    font-size: 64px;
+}
+.card h3{
+font-size: 20px;
+padding: 10px 0px;
+color: #f7c789;
+text-transform: uppercase;
+}
+
+.card p{
+    width: 200px;
+}
+
+
+/* sessão contato */
+#contato{
+    margin: 40px 0px;
+}
+.redes a{
+    font-size: 48px;
+    color: var(--cor-neutra);
+}
+
+.form {
+    border: 2px solid var(--cor-neutra);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.form input {
+    width: 200px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    background-color: #fde4bd;
+}
+
+/* rodapé*/
+
+footer{
+    border-top:1px solid var(--cor-preta);
+}
+footer .container{
+    flex-direction: column;
+
+    & a{
+        font-size: 16px;
+    }
+}
