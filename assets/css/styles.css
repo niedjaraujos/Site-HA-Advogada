@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
 
-
 * {
     margin: 0;
     box-sizing: border-box;
@@ -13,7 +12,6 @@
 
 :root {
     --cor-preta: #000;
-    --cor-branca: #fff;
     --cor-fundo: #fffaf1 ;
     --cor-neutra: #c29254;
 }
@@ -55,7 +53,9 @@ header {
 li {
     list-style: none;
 }
-
+li:hover{
+    border-bottom: 2px solid var(--cor-fundo);
+}
 a {
     text-decoration: none;
     font-size: 22px;
@@ -66,7 +66,7 @@ a {
 
 .bg-banner {
     height: calc(100vh - 70px);
-    background-image: url(../img/background.jpg);
+    background-image: url(../img/banner.jpg);
     background-size: cover;
 }
 
@@ -76,6 +76,7 @@ a {
 }
 .texto-sobre h2{
 font-size: 48px;
+margin-bottom: 30px;
 }
 .texto-sobre p{
     font-size: 20px;
@@ -120,32 +121,54 @@ text-transform: uppercase;
 .card p{
     width: 200px;
 }
+.card:nth-child(4n + 4){
+    border-right: 1px solid var(--cor-neutra);
+}
 
 
 /* sessão contato */
 #contato{
     margin: 40px 0px;
 }
-.redes a{
-    font-size: 48px;
+
+.form h2{
     color: var(--cor-neutra);
+   text-transform: uppercase;
+   margin-bottom: 20px;
 }
 
-.form {
-    border: 2px solid var(--cor-neutra);
-    border-radius: 5px;
-    padding: 20px;
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .form input {
-    width: 200px;
-    height: 20px;
+    width: 340px;
+    height: 30px;
     border: none;
     border-radius: 5px;
     outline: none;
     padding: 10px;
-    background-color: #fde4bd;
+    background-color: #ffefd6;
 }
+.form textarea{
+    outline: none;
+    border: 1px solid #fde4bd;
+    border-radius: 5px;
+}
+
+.redes{
+margin-bottom: 30px;
+
+}
+.redes a{
+    font-size: 48px;
+    color: var(--cor-neutra);
+    padding: 0px;
+    margin-right: 15px;
+}
+
 
 /* rodapé*/
 
@@ -157,5 +180,6 @@ footer .container{
 
     & a{
         font-size: 16px;
+        text-transform: none;
     }
 }
