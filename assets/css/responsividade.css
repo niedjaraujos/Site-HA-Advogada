@@ -1,0 +1,57 @@
+@media (min-width: 300px) and (max-width: 431px) {
+
+
+
+    header .menu {
+        width: 40px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    
+    }
+
+    header .menulist {
+        height: 5px;
+        border-radius: 10px;
+        background-color: var(--cor-neutra);
+    }
+
+    .container {
+        max-width: 430px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+.bg-banner{
+    background-position: center;
+}
+
+#sobre .container{
+   display: flex;
+   flex-direction: column;
+}
+
+.container .texto-sobre{
+    width: 300px;
+    margin-top: 30px;
+}
+
+#atuacao .card{
+    border: none;
+    margin-left: 50px;
+    border-bottom: 1px solid var(--cor-neutra);
+}
+
+#contato .container{
+    display: block;
+    margin-left: 20px;
+}
+.container .img-contato{
+    display: none;
+}
+
+}

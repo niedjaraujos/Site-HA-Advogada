@@ -27,9 +27,6 @@ header {
     background-color: var(--cor-preta);
     height: 70px;
     align-items: center;
-    left: 0;
-    right: 0;
-    top: 0;
 }
 
 .container {
@@ -173,13 +170,16 @@ margin-bottom: 30px;
 /* rodapé*/
 
 footer{
-    border-top:1px solid var(--cor-preta);
+    background-color:  var(--cor-preta);
+    color: var(--cor-neutra);
 }
+
 footer .container{
     flex-direction: column;
 
     & a{
         font-size: 16px;
         text-transform: none;
+        color: var(--cor-fundo);
     }
 }
