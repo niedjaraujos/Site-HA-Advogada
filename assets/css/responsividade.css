@@ -35,7 +35,7 @@
    flex-direction: column;
 }
     
-.img-sobre img{
+.container .img-sobre img{
 width: 300px;
 }
 
