@@ -34,8 +34,9 @@
    display: flex;
    flex-direction: column;
 }
-    .img-sobre img{
-    width: 420px;
+    
+.img-sobre img{
+width: 300px;
 }
 
 .container .texto-sobre{
